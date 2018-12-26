@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Sarabun");
+body {
+  background-color: #d5d6bd;
+  color: white;
+  font-family: 'Sarabun', 'sans-serif'; }
+  body .row {
+    margin: 0; }
+  body div.background {
+    z-index: -1;
+    opacity: .6;
+    top: 0;
+    left: 0;
+    position: absolute;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%; }
+  body .summary-container {
+    background: #080808;
+    height: 100vh; }
+    body .summary-container .summary {
+      text-transform: uppercase;
+      height: 40vh; }
+      body .summary-container .summary .description {
+        text-align: justify;
+        width: 80%;
+        font-size: 10pt;
+        text-transform: none; }
+      body .summary-container .summary img {
+        border-radius: 100%;
+        max-width: 180px;
+        max-height: 180px;
+        border: 10px #080808 solid;
+        margin-bottom: 20px; }
+      body .summary-container .summary hr {
+        width: 70%;
+        border: 1px #444 solid; }
+    body .summary-container .social-media {
+      width: calc(100% + 30px);
+      margin: 0 -15px;
+      background: black; }
+      body .summary-container .social-media nav {
+        padding: 1em; }
+  body .menu {
+    width: 100%;
+    height: calc(100% - 40vh - 30px); }
+    body .menu .navigation {
+      width: 100%;
+      text-align: center; }
+      body .menu .navigation nav {
+        padding: 5px;
+        cursor: pointer;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 9pt;
+        letter-spacing: 7px;
+        padding: 20px; }
+        body .menu .navigation nav::before {
+          content: '';
+          position: absolute;
+          width: 0;
+          transform: translateX(50%) scaleX(0);
+          transition: transform .3s ease-in-out; }
+        body .menu .navigation nav:hover::before, body .menu .navigation nav.selected::before {
+          content: '';
+          transform: translateX(50%) scaleX(100);
+          height: 1px;
+          background: white;
+          bottom: 0;
+          width: 1px;
+          left: 50%; }
+  body .main .content {
+    height: calc(100% - 45px);
+    width: 100%;
+    overflow: hidden; }
+    body .main .content div {
+      display: inline-block;
+      transition: margin-left 1s ease-in-out;
+      width: 100%; }
+      body .main .content div.active {
+        margin-left: 0 !important; }
+      body .main .content div.welcome {
+        text-transform: uppercase;
+        text-align: center; }
+        body .main .content div.welcome span {
+          letter-spacing: 10px; }
+
+/*# sourceMappingURL=main.css.map */
